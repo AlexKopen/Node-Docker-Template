@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node-docker-template:
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm start
